@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se junte ao BRC</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <div class="form-container">
+        <form id="register">
+            <h2>Se junte ao BRC ainda hoje!</h2>
+            <p>Já possui conta? <a href="../logged/logged.html">Clique aqui para entrar!</a></p>
+
+            <label for="name"><i class="fa-regular fa-user"></i> Nome:</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+
+            <label for="lastName"><i class="fa-solid fa-user"></i> Sobrenome:</label>
+            <input type="text" id="lastName" name="lastName" autocomplete="family-name" required>
+
+            <label for="email"><i class="fa-regular fa-envelope"></i> E-mail:</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+
+            <label for="number"><i class="fa-solid fa-mobile"></i> Número de Telefone:</label>
+            <input type="tel" id="number" name="tel" autocomplete="tel" required>
+
+            <label for="password"><i class="fa-solid fa-key"></i> Senha:</label>
+            <input type="password" id="password" name="password" autocomplete="new-password" required>
+
+            <label for="confirm"><i class="fa-solid fa-lock"></i> Confirmar Senha:</label>
+            <input type="password" id="confirm" name="confirm" autocomplete="new-password" required>
+
+            
+            <button type="submit" id="confirmForm">
+                <label for="registredUser" id="logged"></label>
+                <i id="icon" class="fa-solid fa-door-closed"></i> Registrar
+            </button>
+        </form>
+    </div>
+</body>
+</html>

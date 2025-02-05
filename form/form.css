@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E3DED1;
+    height: 100vh;
+    width: 90%;
+    background-image: url(photo_form/Audi.jumping.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1990px 800px;
+    animation: animaFundo 15s infinite;
+    padding: 0 20px;
+}
+
+@keyframes animaFundo {
+    30% {
+        background-image: url(photo_form/lanciarally.jpg);
+    }
+    50% {
+        background-image: url(photo_form/quattrorally.jpg);
+    }
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 505px 600px 760px;
+    grid-template-rows: 850px;
+}
+
+#register {
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 4px black;
+    box-sizing: border-box;
+    align-items: -webkit-center;
+    align-content: space-evenly;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#information {
+    margin-left: 1%;
+    width: 400px;
+    height: 630px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 8px 4px black;
+    position: absolute;
+    top: 15%;
+    align-content: space-evenly;
+    text-align: -webkit-center;
+}
+
+#information p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#selectType {
+    margin-bottom: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 10px; 
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
