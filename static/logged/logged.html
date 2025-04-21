@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Brasil Rally Championship</title>
+    <link rel="stylesheet" href="/logged.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <meta
+      content="style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Brasil Rally Championship</h1>
+      <p>Faça login para acessar sua conta!</p>
+    </header>
+
+    <main>
+      <div class="login-container">
+        <form id="loginForm">
+          <label for="email"
+            ><i class="fa-regular fa-envelope"></i> email:</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite seu email"
+            required
+          />
+          <label for="cpf"><i class="fa-solid fa-id-card"></i> CPF:</label>
+          <input
+            type="text"
+            id="cpf"
+            name="cpf"
+            placeholder="Digite seu cpf"
+            required
+          />
+
+          <label for="password"><i class="fa-solid fa-key"></i> Senha:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Digite sua senha"
+            required
+          />
+
+          <button type="submit">Entrar</button>
+        </form>
+        <p id="errorMessage" class="error-message"></p>
+        <p>
+          Ainda não tem conta?
+          <a href="/form.html">Cadastre-se aqui</a>.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 Brasil Rally Championship. Todos os direitos reservados.
+      </p>
+    </footer>
+
+    <script src="/logged.js"></script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-image: url(photo_main/polo_rally.webp);
+  animation: animaFundo 30s infinite;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes animaFundo {
+  30% {
+    background-image: url(photo_main/polo_rally.webp);
+  }
+  50% {
+    background-image: url(photo_main/bmw_rally.webp);
+  }
+  80% {
+    background-image: url(photo_main/audi_porsche_rally.webp);
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr 300px;
+  grid-template-rows: 150px auto 50px;
+  height: 100vh;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.header {
+  grid-area: header;
+  background-color: rgba(128, 128, 128, 0.85);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.main {
+  grid-area: main;
+  background-color: rgba(128, 128, 128, 0.85);
+  border-radius: 15px;
+  padding: 20px;
+  overflow-y: auto;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.side {
+  grid-area: sidebar;
+  background-color: rgba(128, 128, 128, 0.85);
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+table {
+  width: 100%;
+  border-spacing: 10px;
+}
+
+th {
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00f0ff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00d0e6;
+  color: white;
+}
+
+section#userTag {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+  background-color: rgba(128, 128, 128, 0.85);
+  padding: 10px;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: rgba(128, 128, 128, 0.85);
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.info-card {
+  width: 500px;
+  height: 450px;
+  background-color: rgba(240, 248, 255, 0.95);
+  border: 1px solid #ccc;
+  padding: 20px;
+  position: absolute;
+  right: 20px;
+  top: 160px;
+  transform: translateX(120%);
+  transition: transform 0.5s ease-in-out;
+  z-index: 10;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  font-size: 1.1rem;
+}
+
+.info-card.show {
+  transform: translateX(0);
+}
+
+table,
+tr,
+th {
+  border: none;
+}
+
+.profilePic {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.userName,
+#name,
+#lastName {
+  font-family: inherit;
+}

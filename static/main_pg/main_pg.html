@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BRC main</title>
+    <link rel="stylesheet" href="/main_pg.css" />
+    <script src="/main_pg.js" defer></script>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <h1>Bem vindos ao Brasil rally champioship</h1>
+      </header>
+      <section id="userTag">
+        <p>User:</p>
+        <span id="name"></span> <span id="lastName"></span>
+        <p>tipo de conta:</p>
+      </section>
+      <nav class="side">
+        <table>
+          <tr>
+            <th id="pilots">
+              <button type="button" onclick="showInfo('pilots')">
+                nossos pilotos
+              </button>
+            </th>
+          </tr>
+          <tr>
+            <th id="patreon">
+              <button type="button" onclick="showInfo('patreon')">
+                patrocinadores
+              </button>
+            </th>
+          </tr>
+          <tr>
+            <th id="team">
+              <button type="button" onclick="showInfo('team')">equipes</button>
+            </th>
+          </tr>
+          <tr>
+            <th id="purchase">
+              <button type="button" onclick="showInfo('purchase')">
+                loja virtual
+              </button>
+            </th>
+          </tr>
+          <tr>
+            <th id="nextEvent">
+              <button type="button" onclick="showInfo('nextEvent')">
+                próximos eventos
+              </button>
+            </th>
+          </tr>
+          <tr>
+            <th id="contact">
+              <button type="button" onclick="showInfo('contact')">
+                contatos
+              </button>
+            </th>
+          </tr>
+          <tr>
+            <th id="workWithUs">
+              <button type="button" onclick="showInfo('workWithUs')">
+                trabalhe conosco!
+              </button>
+            </th>
+          </tr>
+          <tr>
+            <th id="consumeOfUser">
+              <button type="button" onclick="showInfo('consumeOfUser')">
+                consumo do espectador
+              </button>
+            </th>
+          </tr>
+        </table>
+      </nav>
+      <main class="main"></main>
+      <div id="infoCard" class="info-card">
+        <p id="infoText"></p>
+      </div>
+      <footer class="footer">@ direito autoral</footer>
+    </div>
+  </body>
+</html>
